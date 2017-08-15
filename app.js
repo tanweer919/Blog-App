@@ -4,7 +4,6 @@ var methodOverride = require("method-override");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 //app config
-//mongoose.connect("mongodb://localhost/blog_app");
 mongoose.connect("mongodb://tanweer:myfriend.a1@ds153637.mlab.com:53637/blogger");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
