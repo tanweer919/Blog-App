@@ -1,0 +1,21 @@
+i.comments {
+    font-size: 2em;
+}
+.container.main {
+    margin-top: 7em;
+}
+#delete {
+    display: inline;
+}
+i.trash, i.write {
+    font-size: 1.53em;
+}
+body {
+    background: url("https://love2justice.files.wordpress.com/2012/02/blog-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
