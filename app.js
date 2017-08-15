@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 //Mongoose/model config
 var blogSchema = mongoose.Schema({
+    name: String,
     title: String,
     image: String,
     body: String,

@@ -1,5 +1,5 @@
 <% include ./partials/header %>
-<div class="ui main text container">
+<div class="ui Site-content main text container">
     <div class="ui huge header">Blogger</div>
     <div class="ui top attached segment">
         <div class="ui divided items">
@@ -11,6 +11,7 @@
             <div class="content">
             <a class="header" href="/blogs/<%= blog._id %>"><%= blog.title %></a>
             <div class="meta">
+            <p>Written by <%=blog.name %></p>
             <span><%= blog.created.toDateString() %></span>
             </div>
             <div class="description">
