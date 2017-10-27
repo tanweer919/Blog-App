@@ -31,3 +31,6 @@ html {
     padding: var(--space) var(--space) 0;
     width: 100%;
 }
+.description {
+    word-wrap: break-word;
+}

@@ -3,8 +3,9 @@ var app = express();
 var methodOverride = require("method-override");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
-//app config
-mongoose.connect("mongodb://tanweer:myfriend.a1@ds153637.mlab.com:53637/blogger");
+//app config//
+//mongoose.connect("mongodb://tanweer:myfriend.a1@ds153637.mlab.com:53637/blogger");
+mongoose.connect("mongodb://localhost/blog");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -91,7 +92,7 @@ app.delete("/blogs/:id", function (req, res) {
         }
     });
 });
-app.listen(process.env.PORT, function () {
+app.listen(3000||process.env.port, function () {
     console.log("Server started successfully");
 });
 
